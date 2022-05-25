@@ -31,11 +31,11 @@ app.post("/",(req,res)=>{
     ]
   };
   const jsonData = JSON.stringify(data);
-  const url = "https://us14.api.mailchimp.com/3.0/lists/871b4e14f1";
+  const url = "URL";
 
   const options = {
     method: "POST",
-    auth: "Rohit:746366b2a6a53223e85933aecaee2015-us14"
+    auth: "Rohit:API KEY"
   };
 
   const request = https.request(url, options, (resp)=>{
@@ -59,9 +59,3 @@ app.listen(process.env.PORT||3000, ()=>{
 app.post("/failure",(req, res)=>{
   res.redirect('/')
 })
-
-// api key
-// 746366b2a6a53223e85933aecaee2015-us14
-
-// list/audience id
-// 871b4e14f1
